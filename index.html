@@ -415,6 +415,17 @@ header{text-align:left;padding:17px 17px 15px;display:flex;align-items:center;ju
 .cb-min-result .cb-qr-entry-picker small{font-size:9px}
 .cb-min-result .cb-qr-confirm{margin-top:10px}
 
+
+/* Current Stage uses the same two-line custom choice control as Market Update. */
+#original-editor .cb-edit-stage-wrap{position:relative;width:100%;min-width:0}
+#original-editor .cb-edit-stage-wrap>#edit-stage{position:absolute;width:1px;height:1px;min-height:0;opacity:0;pointer-events:none}
+#original-editor .cb-edit-stage-choice{position:relative;width:100%;min-width:0}
+#original-editor .cb-edit-stage-choice>summary{box-sizing:border-box;display:flex;align-items:center;position:relative;min-height:48px;width:100%;padding:8px 26px 8px 9px;background:#1b1a18;border:1px solid #39342d;border-radius:6px;color:#eee;font-size:11px;font-weight:500;line-height:1.3;white-space:normal;overflow-wrap:anywhere;list-style:none;cursor:pointer}
+#original-editor .cb-edit-stage-choice>summary::-webkit-details-marker{display:none}
+#original-editor .cb-edit-stage-choice>summary:after{content:'⌄';position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:15px;color:var(--gold)}
+#original-editor .cb-edit-stage-options{position:absolute;z-index:10050;top:calc(100% + 4px);left:0;right:0;max-height:190px;overflow-y:auto;background:#22211f;border:1px solid #54482e;border-radius:6px;box-shadow:0 12px 25px #000c}
+#original-editor .cb-edit-stage-options button{display:block;width:100%;padding:10px 9px;background:transparent;border:0;border-bottom:1px solid #3b3730;color:#eee;font-size:11px;line-height:1.3;text-align:left;white-space:normal}
+#original-editor .cb-edit-stage-options button.selected{color:var(--gold);background:#30291d}
 /* Original analysis editor: same compact design tokens as New Market Update.
    Replaces previous editor styling in place; no global form overrides. */
 #original-editor.cb-edit-analysis{box-sizing:border-box;margin-top:14px;padding:14px;border:1px solid #342e25;border-radius:12px;background:#0e0e0d;min-width:0}
